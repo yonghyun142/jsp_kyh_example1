@@ -1,3 +1,4 @@
+<%@page import="java.util.Arrays"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,19 +9,12 @@
 </head>
 <body>
 <%
-	//int i =0;
-	//System.out.println("아 죽겠당!!" + i);
-	//out.print( i + "<br>");
+   String str = request.getParameter("age");
+	int age = Integer.valueOf(str);
 	
-	int i = 0;
-	while(true){
-		i++;
-		out.println("2*"+i+"="+(2*i)+"<br>");
-		
-		if(i>=9)
-			break;
-	}
 %>
+
+<h1> 나이: <%=age %> 성인입니다. 주류판매 가능</h1>
 
 </body>
 </html>

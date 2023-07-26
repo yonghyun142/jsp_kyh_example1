@@ -9,12 +9,9 @@
 </head>
 <body>
 <%
-   String str = request.getParameter("age");
-	int age = Integer.valueOf(str);
-	
+String id = (String)session.getAttribute("id");
+int num = (Integer)session.getAttribute("tel");
 %>
-
-<h1> 나이: <%=age %> 성인입니다. 주류판매 가능</h1>
 
 </body>
 </html>
